@@ -5,22 +5,22 @@
 babel( es6, es7 )
 
 ### frameworks
-React.js
-redux
-redux-actions
-redux-saga
-CssModules
+React.js  
+redux  
+redux-actions  
+redux-saga  
+CssModules  
 
 ### build
-webpack
-gulp
+webpack  
+gulp  
 
 ### test
-eslint
-mocha
-chai
-sinon
-enzyme
+eslint  
+mocha  
+chai  
+sinon  
+enzyme  
 
 ## How to use
 ```
