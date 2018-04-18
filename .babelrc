@@ -1,8 +1,27 @@
 {
-  "presets": ["es2015", "react", "stage-2"],
-  "plugins": [
-    "syntax-flow",
-    "transform-object-assign",
-    "transform-decorators-legacy"
-  ]
+  "env": {
+    "development": {
+      "presets": [["env", {"targets": {"browsers": ["last 2 versions"]}, "modules": false}], "react", "stage-0"],
+      "plugins": [
+        "transform-decorators-legacy",
+        [ "babel-plugin-root-import", [{
+          "rootPathPrefix": "~",
+          "rootPathSuffix": "src/js/"
+        }]],
+        "import-glob",
+      ]
+    },
+    "test": {
+      "presets": [["env", {"targets": {"browsers": ["last 2 versions"]}, "modules": "commonjs"}], "react", "stage-0"],
+      "plugins": [
+        "transform-decorators-legacy",
+        [ "babel-plugin-root-import", [{
+          "rootPathPrefix": "~",
+          "rootPathSuffix": "src/js/"
+        }]],
+        "import-glob",
+      ]
+    }
+  }
 }
+

@@ -1,5 +1,0 @@
---compilers js:babel-register
---ui bdd
---reporter dot
---timeout 5000
---recursive
